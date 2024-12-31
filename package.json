@@ -1,0 +1,42 @@
+{
+  "name": "@adpro/bili-api",
+  "version": "1.0.0",
+  "description": "Bilibili api for Node.js",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "./dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "syncNpmmirror": "tsc --noEmit && tsx ./scripts/syncNpmmirror.ts"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adproqwq/bili-api.git"
+  },
+  "keywords": [
+    "bilibili"
+  ],
+  "author": "Adpro",
+  "bugs": {
+    "url": "https://github.com/adproqwq/bili-api/issues"
+  },
+  "homepage": "https://github.com/adproqwq/bili-api",
+  "license": "MIT",
+  "packageManager": "pnpm@9.15.2",
+  "devDependencies": {
+    "@types/md5": "^2.3.5",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "md5": "^2.3.0"
+  }
+}

@@ -1,2 +1,5 @@
 # bili-api
-Bilibili api for Node.js
+
+用于Node.js的Bilibili API
+
+--施工中--
